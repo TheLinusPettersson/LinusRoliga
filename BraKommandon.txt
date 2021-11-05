@@ -1,0 +1,41 @@
+---Viktiga kommandon--
+OBS! citattecknen ska inte skrivas om det inte står att de ska var med 
+
+cd "filnamn" (Current Directory) - väljer vilken fil som vi är i (clone gör detta aoutomatisk) 
+
+ls (LiSt) - visar vilka filer som vi "är" i, cd byter detta
+
+                                       |röd text = inte tillaggd   
+git status - visar status på projektet |grön = tillagd men inte publicerad
+				       |grå = publicerad dvs en del av allas program
+
+git add "filnamn" - gör att filen blir "grön" dvs du är redo att skicka de till Gitthub. 
+	tex: "git add -all", gör alla dina ändrinag till "gröna"
+
+git reset "filnamn" - gör filen "röd" igen
+	genom att tillägga "--hard" kommer dina filer att ändras till de som senast laddades ner 
+ 	
+
+git commit -m "medelande" (med sitauationstecken) - du "commitar" till ändringarna   
+
+git push origin "branch namn" -  publicerar din ändring till programet till Github. 
+	text git push origin master - publicerar  hela projektet (master).
+ 
+git clone "ssh adress" -  kopierar och hämtar hem filen
+
+git pull origin "branch namne" - hämtar pogramet som finns på github 
+	tex git pull origin master - hämtar hela pogramet (master) 
+
+nano "filnamn för text" - öppnar nano där du kan skriva en sådan här fin text.
+	OBS! måste skriva in kommandot: "git config --global core.editor "nano". för att kunna använda nano.
+
+-- Skapa en egen .git fil på datorn --
+ 
+	1. börja med att skapa filen
+	2. skriv komandot:  cd "filnamn"
+	3. -:- git init - gör filen till en .github fil. 
+		3.5 -:- (situationell)  git pull origin master "ssh adress till prject man vill kopiera" 
+	4. -:- git remote add origin "ssh adress" - kopplar mappen på datorn med repositaryn på github  
+	5. klar!   
+	
+	Eller klona någon annas :) :)
